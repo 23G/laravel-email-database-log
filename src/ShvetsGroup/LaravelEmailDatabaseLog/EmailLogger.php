@@ -2,7 +2,7 @@
 
 namespace ShvetsGroup\LaravelEmailDatabaseLog;
 
-use DB;
+use ShvetsGroup\LaravelEmailDatabaseLog\Models\EmailLog;
 use Illuminate\Mail\Events\MessageSending;
 
 class EmailLogger
@@ -16,7 +16,7 @@ class EmailLogger
     {
         $message = $event->message;
 
-        DB::table('email_log')->insert([
+        EmailLog::create([
             'date' => date('Y-m-d H:i:s'),
             'to' => $message->getHeaders()->get('To')->getFieldBody(),
             'from' => $message->getHeaders()->get('From')->getFieldBody(),
