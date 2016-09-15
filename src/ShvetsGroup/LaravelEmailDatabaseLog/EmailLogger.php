@@ -21,7 +21,7 @@ class EmailLogger
             'to' => $message->getHeaders()->get('To')->getFieldBody(),
             'from' => $message->getHeaders()->get('From')->getFieldBody(),
             'subject' => $message->getHeaders()->get('Subject')->getFieldBody(),
-            'body' => $this->getMimeEntityString($message),
+            'body' => $message->getBody(),
         ]);
     }
 
