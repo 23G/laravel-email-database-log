@@ -12,9 +12,11 @@ class EmailLog extends Migration
      */
     public function up()
     {
-        Schema::create('email_log', function (Blueprint $table) {
+        Schema::create('email_logs', function (Blueprint $table) {
+            $table->increments('id');
             $table->dateTime('date');
             $table->string('to');
+            $table->string('from');
             $table->string('subject');
             $table->text('body');
         });
@@ -27,6 +29,6 @@ class EmailLog extends Migration
      */
     public function down()
     {
-        Schema::drop('email_log');
+        Schema::drop('email_logs');
     }
 }

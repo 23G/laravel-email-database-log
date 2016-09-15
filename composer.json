@@ -1,5 +1,5 @@
 {
-    "name": "shvetsgroup/laravel-email-database-log",
+    "name": "dylan-lamers/laravel-email-database-log",
     "description": "A simple database logger for all outgoing emails sent by Laravel website.",
     "keywords": ["laravel", "markdown"],
     "license": "MIT",
@@ -7,6 +7,10 @@
         {
             "name": "Alexander Shvets",
             "email": "neochief@shvetsgroup.com"
+        },
+        {
+            "name": "Dylan Lamers",
+            "email": "git@dylanlamers.nl"
         }
     ],
     "require": {
@@ -14,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "ShvetsGroup\\LaravelEmailDatabaseLog\\": "src/"
+            "DylanLamers\\LaravelEmailDatabaseLog\\": "src/"
         }
     },
     "minimum-stability": "stable"
