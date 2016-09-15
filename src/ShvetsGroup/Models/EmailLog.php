@@ -1,6 +1,6 @@
 <?php
 
-namespace DylanLamers\LaravelEmailDatabaseLog\Models;
+namespace ShvetsGroup\LaravelEmailDatabaseLog\Models;
 
 class EmailLog extends BaseModel
 {
